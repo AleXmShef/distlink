@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(distlink)
 
+project(distlink)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 add_library(distlink STATIC "src/distlink.cpp" "src/distlink.h")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
